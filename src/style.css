@@ -47,8 +47,8 @@ box-shadow: 0 0 10px black;
     flex-wrap: wrap;
 }
 .icon{
-    margin: 2px;
-    padding: 2px;
+    margin: 5px;
+    padding: 5px;
     border: 2px solid black;
 }
 .todos_single{
@@ -68,4 +68,16 @@ box-shadow: 0 0 10px black;
     border: none;
     font-size: 20px;
     
+}
+
+@media(max-width: 700px){
+    .input{
+        width: 85%;
+    }
+    .todos{
+        width: 85%;
+    }
+    .todos_single{
+        width: 80%;
+    }
 }
