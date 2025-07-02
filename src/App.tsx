@@ -1,24 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import InputFeild from './InputFeild';
 
-function App() {
+// let name: string = "maliha";
+// let hobbies : number[];
+// let role: [number, string];
+// role =[3,"4"];
+
+// type Person ={
+//   name: string | number;
+//   age?: number;
+// }
+// let person: Person ={
+//   name: 4,
+//   // age: 3
+// };
+
+// function printName(name: string | number){
+//   console.log(name)
+// }
+
+// printName(5);
+
+// let ageName:(age: number) => never;
+
+
+
+const App:React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <h2 className="heading">Taskify</h2>
+     <InputFeild></InputFeild>
     </div>
   );
 }
