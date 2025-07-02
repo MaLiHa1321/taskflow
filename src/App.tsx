@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import InputFeild from './InputFeild';
 import { Todo } from './modal';
+import TodoList from './TodoList';
 
 // let name: string = "maliha";
 // let hobbies : number[];
@@ -34,14 +35,20 @@ const App:React.FC = () => {
 
   const handleAdd =(e: React.FormEvent) =>{
     e.preventDefault();
-    console.log(todo)
+
+    if(todo){
+      setTodos([...todos, { id: Date.now(), todo, isDone: false}])
+      setTodo("");
+    }
+    
   }
 
-  console.log(todo)
+  console.log(todos)
   return (
     <div className="App">
      <h2 className="heading">Taskify</h2>
      <InputFeild todo={todo} setTodo={setTodo} handleAdd={handleAdd}></InputFeild>
+    <TodoList todos={todos} setTodos={setTodos}></TodoList>
     </div>
   );
 }
