@@ -19,6 +19,6 @@ A simple and responsive Todo List web application built using **React** and **Ty
 
 - React  
 - TypeScript  
-- CSS / Tailwind (if used)  
-- useState & useRef hooks
+- CSS
+
 
